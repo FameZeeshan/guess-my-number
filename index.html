@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Guess My Number</h1>
+      <h2>Range Between 1 to 20</h2>
+    </div>
+    <div class="gameArea">
+      <button onclick="start()" id="startBtn" class="btn">start</button>
+      <div class="communicationBox" id="communicationBox">
+        Welcome to Game !!
+      </div>
+      <input
+        type="number"
+        class="numberInput"
+        id="numberInput"
+        placeholder="Enter your Guess between 1-50"
+      />
+      <button onclick="compareWithGuess()" class="btn guessBtn" id="guessBtn">
+        Guess
+      </button>
+    </div>
+    <div class="yourScoreContainer">
+      <div>Your Score:</div>
+      <div id="yourScore">0</div>
+    </div>
+    <div class="highScoreContainer">
+      <div>High Score:</div>
+      <div id="highestScore">0</div>
+    </div>
+    <div class="instructionArea">
+      <h2>Instructions</h2>
+      <ul>
+        <li>Enter the range of 1 to 20</li>
+        <li>Enter your guess</li>
+        <li>See if your guess is too high or too low</li>
+        <li>Change your guess</li>
+      </ul>
+    </div>
+    <!-- script link -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

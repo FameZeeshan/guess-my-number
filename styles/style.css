@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f2bb35;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+}
+
+.btn {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid 5a0748;
+  background-color: #00c3eb;
+  font-weight: 900;
+  size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+
+.btn:hover {
+  background-color: pink;
+  color: white;
+}
+
+.numberInput {
+  height: 2rem;
+  width: 212px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px pink;
+  padding-left: 5px;
+  margin-top: 1rem;
+  /* visibility: hidden; */
+  background-color: #790955;
+}
+
+.gameArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+
+.communicationBox {
+  font-weight: bold;
+}
+
+.none {
+  visibility: hidden;
+}
+
+.highScoreContainer,
+.yourScoreContainer {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.guessBtn {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.instructionArea {
+  background-color: #ec408b;
+  /* visibility: collapse; */
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.heading {
+  margin: 1rem;
+}
